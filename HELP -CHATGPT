@@ -13,3 +13,19 @@ __________________________________________________
 This will automatically run the migrate module whenever a Meterpreter session is opened.
 
 Start the exploit or payload: Once the autorunscript is set, you can launch your exploit as usual. When the session is created, it will automatically run the migration script, which will attempt to migrate the Meterpreter session to a different process on the target machine.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Port Already in Use:
+
+    It's likely that the port 4545 is already being used by another application or Metasploit session.
+
+    You can verify which process is using this port by running the following command in your terminal:
+
+    For Linux/macOS:
+
+sudo lsof -i :4545
+
+For Windows:
+
+netstat -an | findstr :4545
