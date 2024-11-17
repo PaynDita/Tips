@@ -1,1 +1,15 @@
+What is autorunscript?
 
+The autorunscript option in Metasploit allows you to specify a script that will run automatically once a session is created. This is useful when you want to perform certain tasks (like migration) as soon as you get access to a target machine, without having to manually run the commands every time.
+How to use set autorunscript with migrate:
+
+    Start your Metasploit session: Once you have exploited a vulnerability and established a Meterpreter session, you'll be in the Metasploit console, and your session should be active.
+
+    Set the autorunscript option: You can use the set autorunscript command to specify the script that will run automatically after the session is established. If you want the session to automatically run the migrate module, you can use the following command:
+______________________________________________
+set autorunscript post/windows/manage/migrate
+__________________________________________________
+
+This will automatically run the migrate module whenever a Meterpreter session is opened.
+
+Start the exploit or payload: Once the autorunscript is set, you can launch your exploit as usual. When the session is created, it will automatically run the migration script, which will attempt to migrate the Meterpreter session to a different process on the target machine.
