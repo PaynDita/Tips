@@ -1,3 +1,6 @@
+use -n to spped up the scan as it disable for the dns resolution
+#nmap -n $ip
+---------------------------------------------------------------- 
 Nmap Script to Enumrate Shares
 └──╼ #nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.3.181
 -----------------------------------------------------------------------------
