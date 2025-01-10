@@ -1,5 +1,9 @@
-use -n to spped up the scan as it disable for the dns resolution
-#nmap -n $ip
+Speed up scan:
+
+use -n to speed up the scan as it disable for the dns resolution
+use -sS SYN scans are faster than full connection scans (e.g., -sT) because they don’t require completing the handshake.
+
+#nmap -n -sS 10.10.3.181
 ---------------------------------------------------------------- 
 Nmap Script to Enumrate Shares
 └──╼ #nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.3.181
