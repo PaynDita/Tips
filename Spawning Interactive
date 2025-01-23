@@ -1,3 +1,5 @@
+https://hidepatidar.medium.com/spawning-interactive-reverse-shell-7732686ea775
+
 $ which python
 
 python -c 'import pty; pty.spawn("/bin/sh")'
