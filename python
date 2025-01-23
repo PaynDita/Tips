@@ -1,0 +1,12 @@
+$ which python
+
+python -c 'import pty; pty.spawn("/bin/sh")'
+python -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+perl -e 'exec "/bin/sh";'
+
+
+$ export SHELL=bash
+$ export TERM=xterm256-color
+$ stty rows 37 columns 146
+$ bash -i
