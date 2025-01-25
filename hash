@@ -1,0 +1,17 @@
+use touch and nano  not echo
+nano hash.txt
+
+hashcat -m number $hashfile
+hashcat -m 0 hash or hashcat -m 0 hash /usr/share/wordlist/rockyou.txt
+
+------------------------------------------------------------------------
+
+hashcat --show -m number $hashfile    ----it will show the previously cracked hash
+hashcat --show -m 0 hash
+42f749ade7f9e195bf475f37a44cafcb:Password123
+
+-----------------------------------------------------------
+
+
+
+  
